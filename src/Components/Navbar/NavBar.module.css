@@ -1,0 +1,146 @@
+/* If you want to use separate CSS files, is importat to know what, first, they wont interact with the predefined styles, and they need to have
+.module.css in the name, and be imported as a styles object. Otherwise, theyll be loaded for every page.*/
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  box-shadow: 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 15rem;
+  transition: width 0.3s;
+  z-index: 10;
+}
+
+.navbar.minimized {
+  width: 3rem;
+}
+
+.navbarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 6rem;
+  width: 12rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: 'none';
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+.userTab {
+  margin-top: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.userInfo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-emphasis-color: white;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.menuItem {
+  position: relative;
+}
+
+.menuItem .submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-left: 20px;
+  margin-top: 0;
+  background: #000;
+  border: none;
+  width: max-content;
+}
+
+.menuItem:hover .submenu {
+  display: block;
+}
+
+.menu li,
+.submenu li {
+  width: 100%;
+}
+
+.menu a,
+.submenu a {
+  text-decoration: none;
+  font-size: 1.9rem; /* Reduced font size */
+  color: white;
+  transition: color 0.3s;
+  display: flex;
+  align-items: left;
+  padding: 10px 0; /* Reduced padding */
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.5rem; /* Reduced font size */
+  color: white;
+  transition: color 0.3s;
+  display: flex;
+  box-shadow: 1rem 0 1rem -1rem rgba(0, 0, 0, 0.1);
+  align-items: left;
+  height: 3rem; /* Reduced height */
+}
+
+.submenu a {
+  padding: 8px 20px; /* Reduced padding */
+  color: white;
+  font-size: 1.5rem; /* Reduced font size */
+}
+
+.menu a:hover,
+.submenu a:hover {
+  color: cyan;
+}
+
+.menu li,
+.submenu li {
+  width: 100%;
+  margin-bottom: 1rem; /* Reduced margin */
+  padding: 3px 0; /* Reduced padding */
+}
+
+.menu a svg {
+  margin-right: 1rem; /* Reduced margin */
+  font-size: 1.r8em; /* Reduced font size */
+}

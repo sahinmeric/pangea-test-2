@@ -1,0 +1,233 @@
+/* If you want to use separate CSS files, is importat to know what, first, they wont interact with the predefined styles, and they need to have
+.module.css in the name, and be imported as a styles object. Otherwise, theyll be loaded for every page.*/
+
+.main {
+    margin: 0 auto;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    max-width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  
+  .profile {
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    width: 18rem;
+    max-width: 70vw;
+    min-height: 525px;
+    border: 2px solid #0088FE;
+    border-radius: 30px;
+    text-align:center;
+  }
+
+  .buttonCreatorSide {
+    display:inline-flex !important
+  }
+
+  .buttonEnd {
+    display:none !important
+  }
+
+  @media screen and (max-width: 50rem) {
+    .profile {
+      width: 25rem;
+    }
+    .buttonCreatorSide {
+      display:none !important
+    }
+  
+    .buttonEnd {
+      display:inline-flex !important
+    }
+  }
+  
+  .image {
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    height: 14rem;
+    width: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-top: 2px dashed #0088FE;
+    padding-top: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .info {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .infoCreator {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 85vh;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: flex-start ;
+    align-content: flex-start;
+  }
+
+  @media screen and (max-width: 50rem) {
+    .infoCreator {
+      flex-wrap: nowrap;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .followerDistribution {
+    padding: 1rem;
+    width: 25rem;
+    max-width: 70vw;
+    border: 2px solid #0088FE;
+    border-radius: 30px;
+  }
+  
+  .promotionRatesContainer {
+    padding: 1rem;
+    border: 2px solid #0088FE;
+    border-radius: 30px;
+    width: 25rem;
+    max-width: 70vw;
+  }
+  
+  .promotionRates {
+    padding: 0;
+  }
+  
+  .promotionRatesData {
+    display: flex;
+    gap:-5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .bar {
+    height: 30px;
+    width: 220px;
+    color: #0088FE;
+    accent-color: currentColor;
+  }
+  
+  .moreInfo {
+    padding: 1rem;
+    width: 25rem;
+    max-width: 70vw;
+    text-align: center;
+    border: 2px solid #0088FE;
+    border-radius: 30px;
+  }
+
+  .promotionalHeader {
+    background-color: #ff9900;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: slideDown 1s ease-out;
+    position: relative;
+    top: 15px; /* Adjust this value if needed based on your AppBar height */
+    width: 100%;
+    z-index: 10;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .creatorHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .creatorImage {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .info {
+    color: white;
+  }
+  
+  .audienceDemographics {
+    width: 100%;
+  }
+  
+  .followerDistribution {
+    width: 100%;
+  }
+  
+  .ratesAndCampaigns {
+    width: 100%;
+  }
+  
+  .promotionRatesContainer {
+    width: 100%;
+  }
+  
+  .promotionRates {
+    width: 100%;
+  }
+  
+  .promotionRatesData {
+    width: 100%;
+  }
+  
+  .actionCards {
+    width: 100%;
+  }
+  
+  .reviews {
+    width: 100%;
+  }
+  
