@@ -298,7 +298,7 @@ const Campaigns = () => {
 
   return (
     <>
-      <Box sx={{padding:2}}>
+      <Box sx={{ padding: 2 }}>
         <Typography
           variant="h4"
           gutterBottom
@@ -327,10 +327,10 @@ const Campaigns = () => {
                 alignItems: "center",
                 gap: 2,
                 my: 4,
-                width:'100%',
-                boxSizing:'border-box',
-                overflowX:'auto',
-                padding:0
+                width: '100%',
+                boxSizing: 'border-box',
+                overflowX: 'auto',
+                padding: 0
               }}
             >
               <TextField
@@ -339,12 +339,12 @@ const Campaigns = () => {
                 placeholder="Search by name"
                 value={searchQuery}
                 onChange={handleSearchChange}
-                sx={{ minWidth: 240}}
+                sx={{ minWidth: 240 }}
               />
-               <FormControl
+              <FormControl
                 variant="outlined"
                 size="small"
-                sx={{ minWidth: 240}}
+                sx={{ minWidth: 240 }}
               >
                 <InputLabel id="action-type-label">
                   Action Type
@@ -364,7 +364,7 @@ const Campaigns = () => {
               {isTcc && managers && managers.length > 0 && (
                 <FormControl variant="outlined"
                   size="small"
-                  sx={{ minWidth: 240}}>
+                  sx={{ minWidth: 240 }}>
                   <InputLabel id="label-managears">Manager</InputLabel>
                   <Select
                     value={currentManager}
